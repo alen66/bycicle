@@ -1,0 +1,81 @@
+
+@font-face{
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  src: url(../fonts/opensans.woff2) format("woff2"), url(../fonts/opensans.woff) format("woff");
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  src: url(../fonts/opensansbold.woff2) format("woff2"), url(../fonts/opensansbold.woff) format("woff");
+  font-weight: bold;
+}
+
+@tablet-width:768px;
+@desktop-width:1024px;
+@mobile-width-only: 767px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+@media (min-width: @tablet-width) {
+  :root {
+    --width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  :root {
+    --width: 1024px;
+  }
+}
+
+
+.reset() {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-color(@color) {
+  background-color: @color;
+}
+
+.color(@color) {
+  color: @color;
+}
+
+.mg-auto() {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+body {
+  .reset();
+  .color(#ffffff);
+  .mg-auto();
+  .bg-color(#000000);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
