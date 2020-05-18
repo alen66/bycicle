@@ -1,80 +1,71 @@
-  .features h2 {
-    width: 362px;
-    font-family: Open Sans, "Tahoma", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: -0.005em;
-    .mg-auto();
-    color: #1F1F1F;
-  }
+.features h2 {
+  width: 362px;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  .mg-auto();
+  color: #1f1f1f;
+}
 
-  .features {
-    width: 100%;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.features {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-    &__list {
-      .reset();
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0 auto;
-    }
+.features__list {
+  .reset();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
 
-    &__item {
-      min-width: 263px;
-      max-width: 263px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 19px;
-    }
+.features__item {
+  min-width: 263px;
+  max-width: 263px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 19px;
+}
 
+.features__item h3 {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  .reset();
+  text-align: center;
+  letter-spacing: -1.27273px;
+  color: #0ad9c6;
+}
 
-  }
-
-  .features__item h3 {
-    font-family: Open Sans, "Tahoma", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 38px;
-    .reset();
-    text-align: center;
-    letter-spacing: -1.27273px;
-    color: #0AD9C6;
-  }
-
-  .features__item p {
-    font-family: Open Sans, "Tahoma", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 34px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    color: #000000;
-    .reset();
-  }
+.features__item p {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000000;
+  .reset();
+}
 
 @media (max-width: 1023px) {
-  .features {
-    &__list {
-    }
-  }
-
   .features h2 {
     width: 290px;
     font-size: 24px;
     line-height: 41px;
   }
-
-
 }
 
 @media (max-width: 767px) {
