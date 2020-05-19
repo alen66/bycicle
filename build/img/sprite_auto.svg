@@ -2,7 +2,7 @@
 <clipPath id="clip0">
 <rect x="9" y="18" width="12" height="7.4" transform="rotate(-90 9 18)" fill="white"/>
 </clipPath>
-</defs><symbol id="icon-arrow down" viewBox="0 0 25 25">
+</defs><symbol id="icon-arrowdown" viewBox="0 0 25 25">
 <g clip-path="url(#clip0)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 7.4L13.6 12L9 16.6L10.4 18L16.4 12L10.4 6L9 7.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
 </g>
