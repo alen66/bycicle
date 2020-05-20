@@ -1,5 +1,112 @@
 .form-selection {
   display: flex;
   flex-direction: row;
-  height: 763px;
+  justify-content: center;
+  width: 100%;
+  height: 825px;
+  padding-top: 256px;
+}
+
+.form-selection__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-selection__wrapper--promo h1 {
+  width: 393px;
+  .reset();
+  margin-top: 31px;
+  .font-base(@fontNameBold;normal;bold;46px;64px);
+  letter-spacing: -0.005em;
+  color: #ffffff;
+}
+
+.form-selection__wrapper--promo p {
+  width: 381px;
+  height: 64px;
+  .reset();
+  margin-top: 24px;
+  .font-base(@fontName;normal;300;20px;32px);
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  opacity: 0.8;
+  mix-blend-mode: normal;
+}
+
+.form-selection__wrapper--promo {
+  margin-right: 160px;
+}
+
+.form-selection__wrapper--form p {
+  width: 327px;
+  height: 56px;
+  .reset();
+  margin-bottom: 20px;
+  .font-base(@fontName;normal;600;17px;28px);
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+
+.form-selection__wrapper--form input {
+  width: 327px;
+  height: 48px;
+  .reset();
+  margin-bottom: 20px;
+  padding-left: 29px;
+  .font-base(@fontName;normal;normal;15px;24px);
+  letter-spacing: -0.005em;
+  color: #1c1c1c;
+  background-color: #ffffff;
+  border: 1px solid #c9ccd4;
+  border-radius: 4px;
+}
+
+.form-selection__btn {
+  display: block;
+  width: 326px;
+  height: 51px;
+  .font-base("Overpass";normal;600;15px;14px);
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background: #0ad9c6;
+  border-radius: 6px;
+}
+
+@media (max-width: 1023px) {
+  .form-selection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    .reset();
+    margin-top: 72px;
+  }
+
+  .form-selection__logo {
+    display: none;
+  }
+
+  .form-selection__wrapper--promo {
+    height: 126px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 150px;
+  }
+
+  .form-selection__wrapper--promo h1 {
+    width: 525px;
+    margin-top: 62px;
+    .font-base(@fontNameBold;normal;bold;30px;42px);
+    text-align: center;
+  }
+
+  .form-selection__wrapper--promo p {
+    width: 435px;
+    .font-base(@fontName;normal;300;18px;32px);
+    margin-top: 20px;
+    text-align: center;
+  }
 }

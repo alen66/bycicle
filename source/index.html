@@ -11,31 +11,50 @@
 </head>
 <body>
   <header class="header">
-  <a aria-label="Логотип" class="header__logo">
-    <img src="img/logo.svg"  alt="Логотип">
-  </a>
+    <a aria-label="Логотип" class="header__logo">
+      <img src="img/logo.svg"  alt="Логотип">
+    </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#">О нас</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Виды велосипедов</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Видео про велосипеды</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Виды велосипедов</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Видео про велосипеды</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <svg aria-label="Кнопка закрытия меню" class="main-nav__toggle main-nav__toggle--cross" width="50" heigth="50">
+        <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+      </svg>
+      <svg aria-label="Кнопка открытия меню" class="main-nav__toggle main-nav__toggle--menu" width="50" heigth="50">
+        <use xlink:href="img/sprite_auto.svg#icon-menu" ></use>
+      </svg>
+      <div class="header-backimg">
+      <picture>
+      <source srcset="img/imgbike@desktop1x.png" media="(min-width: 1024px)">
+      <source srcset="img/imgbike@tablet1x.png" media="(min-width: 768px)">
+      <img src="img/imgbike@mobile1x.png" width="1440" height="825" alt="Горный велосипед">
+    </picture>
+
+      </div>
     </nav>
   </header>
   <main>
     <section class="form-selection">
       <div class="form-selection__wrapper form-selection__wrapper--promo">
-      <h1>Мы продаем велосипеды</h1>
-      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      <a aria-label="Логотип" class="form-selection__logo">
+      <img src="img/logo.svg"  alt="Логотип">
+      </a>
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
       <div class="form-selection__wrapper form-selection__wrapper--form">
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
@@ -101,5 +120,6 @@
       <a href="tel:+749978468446">+7 (499) -784-684-46</a>
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
