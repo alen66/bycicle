@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  font-size: 2.0833vw; /*30*/
 }
 
 .header__logo {
@@ -14,29 +15,50 @@
   top: 0;
   left: 0;
   z-index: -1;
+  width: 100%;
+  height: 57.2917vw; /*825*/
   display: flex;
   justify-content: center;
-  width: 100%;
   align-items: center;
-  overflow: hidden;
+  background: url("../img/imgbike@desktop1x.png") no-repeat #000000;
+  background-size: cover;
+  background-position: center;
 }
 
-.header-backimg img {
-  min-width: 100%;
-}
+@media (max-width: 768px) {
+  .header {
+    font-size: 3.90625vw; /*30*/
+  }
 
-
-@media (max-width: 1023px) {
   .header__logo {
     left: 22px;
     top: 25px;
     display: block;
   }
+
+  .header-backimg {
+    height: 43.3708vw; /*340px;*/
+    min-height: 320px;
+    background: url("../img/imgbike@tablet1x.png") no-repeat #000000;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 320px) {
+  .header {
+    font-size: 9.375vw; /*30*/
+  }
+
   .header__logo {
     left: 17px;
     top: 25px;
+  }
+
+  .header-backimg {
+    height: 121.875vw; /*390px;*/
+    background: url("../img/imgbike@mobile1x.png") no-repeat #000000;
+    background-size: cover;
+    background-position: center;
   }
 }

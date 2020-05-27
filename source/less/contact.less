@@ -1,0 +1,136 @@
+.contact {
+  width: 100%;
+  .mg-auto();
+  padding-top: 247px;
+}
+
+.contact h2 {
+  .reset();
+  .mg-auto();
+  padding-bottom: 30px;
+  .font-base(@fontName;normal;600;30px;30px);
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
+}
+
+.contact p {
+  width: 555px;
+  .mg-auto();
+  padding-bottom: 35px;
+  .font-base(@fontName;normal;normal;17px;31px);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.contact img {
+  .mg-auto();
+}
+
+.contact__wrapper {
+  padding: 30px 0 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact__wrapper a {
+  margin: 0 10px;
+  .font-base(@fontName;normal;normal;16px;32px);
+  text-decoration-line: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact__icon {
+  &--mail {
+    width: 26px;
+    height: 20px;
+  }
+
+  &--phone {
+    width: 21.5px;
+    height: 22.6px;
+    fill: #ffffff;
+  }
+}
+
+.contact__container {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 152px 35px 0;
+  }
+
+  .contact h2 {
+    padding-bottom: 18px;
+    .font-base(@fontName;normal;600;24px;30px);
+  }
+
+  .contact p {
+    width: 100%; /*555px;*/
+    padding-bottom: 20px;
+  }
+
+  .contact__wrapper {
+    padding: 10px 0 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact__wrapper a {
+    margin: 0 4px;
+    .font-base(@fontName;normal;normal;16px;32px);
+    text-decoration-line: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .contact__container {
+    margin: 0 50px;
+    justify-content: space-between;
+  }
+
+  .contact__icon--phone {
+    margin-right: 15px;
+  }
+
+  .contact__icon--mail {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact {
+    padding-top: 155px;
+  }
+
+  .contact h2 {
+    padding-bottom: 25px;
+    .font-base(@fontName;normal;600;18px;30px);
+  }
+
+  .contact p {
+    width: 82.2656%; /*555px;*/
+    padding-bottom: 20px;
+  }
+
+  .contact__wrapper {
+    padding: 40px 0 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__wrapper a {
+    margin: 0 20px;
+    .font-base(@fontName;normal;normal;16px;22px);
+    text-decoration-line: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,134 @@
+.video {
+  position: relative;
+  width: 100%;
+  height: 23.2333em; /*706*/
+  padding-top: 6.9444%; /*100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.0833vw;
+  background-color: #131314;
+  color: #ffffff;
+}
+
+.video h2 {
+  .reset();
+  padding-top: 1.436%; /* 25px;*/
+  .font-base(@fontName;normal;600;30px;30px);
+  letter-spacing: -0.005em;
+}
+
+.video p {
+  width: 340px;
+  .font-base(@fontName;normal;300;16px;28px); /*16/28*/
+  text-align: center;
+  letter-spacing: -0.005em;
+  opacity: 0.7;
+  padding-bottom: 3.8888%; /*56px;*/
+}
+
+.video__wrapper {
+  position: absolute;
+  bottom: -98px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64.51%; /*929*/
+  height: 17.4em; /*522*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/video-bike@desktop1x.jpg") no-repeat #131314;
+  background-size: cover;
+  background-position: center;
+}
+
+.video__btn {
+  width: 65px;
+  height: 65px;
+  background: url("../img/play.svg") no-repeat #0ad9c6;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background: url("../img/play.svg") no-repeat #25f8e0;
+    background-position: center;
+  }
+
+  &:active {
+    background: url("../img/play.svg") no-repeat #09ab9b;
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .video {
+    height: 406px;
+    padding-top: 50px;
+    font-size: 3.9063vw;
+    background-color: #131314;
+  }
+
+  .video h2 {
+    .reset();
+    margin: 18px 0 4px;
+    .font-base(@fontName;normal;600;24px;30px);
+  }
+
+  .video p {
+    width: 57.9406%; /*435px;*/
+    padding-bottom: 40px;
+  }
+
+  .video__wrapper {
+    bottom: -83px;
+    width: 65.4948%; /*503px;*/
+    height: 282px;
+    display: flex;
+    background: url("../img/video-bike@tablet1x.jpg") no-repeat #131314;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .video__btn {
+    width: 90.36px;
+    height: 90.36px;
+  }
+}
+
+@media (max-width: 320px) {
+  .video {
+    width: 100%;
+    height: 384px;
+    padding: 70px 5% 0;
+  }
+
+  .video h2 {
+    width: 102%;
+    .reset();
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .video p {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .video__wrapper {
+    bottom: -45px;
+    width: 90%;
+    height: 161.66px;
+    display: flex;
+    background: url("../img/video-bike@mob1x.jpg") no-repeat #131314;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .video__btn {
+    width: 65px;
+    height: 65px;
+  }
+}

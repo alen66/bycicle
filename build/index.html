@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <div style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><clipPath id="clip0"><path transform="rotate(-90 9 18)" fill="#fff" d="M9 18h12v7.4H9z"></path></clipPath></defs><symbol id="icon-arrowdown"><g clip-path="url(#clip0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 7.4l4.6 4.6L9 16.6l1.4 1.4 6-6-6-6L9 7.4z" fill="#2C2E3F" fill-opacity=".5"></path></g></symbol><symbol id="icon-cross"><path d="M0 0h50v52H0z"></path><path d="M14 37.7L36 15m0 22.7L14 15" stroke="#141517" stroke-opacity=".2" stroke-linecap="round" stroke-linejoin="round"></path></symbol><symbol id="icon-mail"><path d="M24.2 0H1.8C.8 0 0 .8 0 1.8v16.4c0 1 .8 1.8 1.8 1.8h22.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8zm0 17l-4.6-4.6a.9.9 0 00-1.3 0c-.3.3-.3.8 0 1.2l4.7 4.6H3l4.7-4.6c.3-.4.3-.9 0-1.2a.9.9 0 00-1.3 0L1.8 17V5.7l10.6 8 .5.2c.2 0 .4 0 .6-.2l10.7-8V17zm0-15.2v1.7L13 11.8 1.8 3.5V1.8h22.4z" fill="#0AD9C6"></path></symbol><symbol id="icon-menu" viewBox="0 0 30 30">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="black"></path>
+</symbol><symbol id="icon-phone"><path d="M3.5 6.7a5 5 0 01.8-3.3c.7-.8 1.4-1.3 2.4-1.6.8-.2 1.3 0 1.6 1 .3 1.3.8 2.6 1 4a3 3 0 01-.8 2c-1.1 1-.9 1.9 0 3.5.2.5.6 1.4 1.4 2.6.8 1.2 1.3 1.9 2.3 1.3 1.2-.6 2-.2 3 .8l1.8 2c.9 1 .9 1.7.2 2.4-1.3 1.3-3.3 1.8-4.8.9a9.7 9.7 0 01-2.3-1.9A30 30 0 013.8 9a11 11 0 01-.3-2.2z" stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10"></path></symbol></svg>
+  </div>
   <header class="header">
     <a aria-label="Логотип" class="header__logo">
       <img src="img/logo.svg" alt="Логотип">
@@ -32,18 +37,12 @@
         </ul>
       </div>
       <svg aria-label="Кнопка закрытия меню" class="main-nav__toggle main-nav__toggle--cross" width="50" heigth="50">
-        <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+        <use xlink:href="#icon-cross"></use>
       </svg>
       <svg aria-label="Кнопка открытия меню" class="main-nav__toggle main-nav__toggle--menu" width="50" heigth="50">
-        <use xlink:href="img/sprite_auto.svg#icon-menu"></use>
+        <use xlink:href="#icon-menu"></use>
       </svg>
       <div class="header-backimg">
-      <picture>
-      <source srcset="img/imgbike@desktop1x.png" media="(min-width: 1024px)">
-      <source srcset="img/imgbike@tablet1x.png" media="(min-width: 768px)">
-      <img src="img/imgbike@mobile1x.png" width="1440" height="825" alt="Горный велосипед">
-    </picture>
-
       </div>
     </nav>
   </header>
@@ -56,14 +55,14 @@
         <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
-      <div class="form-selection__wrapper form-selection__wrapper--form">
+      <form class="form-selection__wrapper form-selection__wrapper--form" action="https://echo.htmlacademy.ru" method="post">
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <label for="name"></label>
         <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
         <label for="phone"></label>
         <input type="phone" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="">
         <button class="form-selection__btn" type="submit" value="Отправить">Подобрать велосипед мечты</button>
-      </div>
+      </form>
     </section>
     <section class="features">
       <h2>Несколько фактов о нас</h2>
@@ -89,16 +88,25 @@
     <section class="type-product">
       <h2>Виды велосипедов</h2>
       <ul class="type-product__list ">
-        <li class="type-product__item">
+        <li class="type-product__item type-product__item--left">
+          <picture>
+          <source srcset="img/roadbike@mob-tab1x.jpg" media="(max-width: 768px)">
           <img src="img/roadbike@desktop1x.jpg" width="342" height="503" alt="Дорожный велосипед">
+          </picture>
           <p>Дорожный велосипед</p>
         </li>
-        <li class="type-product__item">
+        <li class="type-product__item type-product__item--centr">
+          <picture>
+          <source srcset="img/mountbike@mob-tabl1x.jpg" media="(max-width: 768px)">
           <img src="img/mountbike@desktop1x.jpg" width="342" height="503" alt="Горный велосипед">
+          </picture>
           <p>Горный велосипед</p>
         </li>
-        <li class="type-product__item">
+        <li class="type-product__item type-product__item--right">
+          <picture>
+          <source srcset="img/child-bike@mob-tab1x.jpg" media="(max-width: 768px)">
           <img src="img/child-bike@desktop1x.jpg" width="342" height="503" alt="Детский велосипед">
+          </picture>
           <p>Детский велосипед</p>
         </li>
       </ul>
@@ -107,7 +115,7 @@
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="video__wrapper">
-        <img src="img/video-bike@desktop1x.jpg" width="929" height="522" alt="Видео про особенности выбора велосипеда">
+        <button class="video__btn type=" button"=""></button>
       </div>
     </section>
   </main>
@@ -115,9 +123,23 @@
     <section class="contact">
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <img src="img/rectangle6@desktop1x.png" width="957" height="530" alt="Карта">
-      <a href="puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <picture>
+        <source srcset="img/rectangle6@tablet1x.png" media="(max-width: 768px)">  <img src="img/rectangle6@desktop1x.png" width="957" height="530" alt="Карта">
+      </picture>
+      <div class="contact__wrapper">
+        <div class="contact__container">
+          <svg class="contact__icon contact__icon--mail" aria-label="Отправить письмо" width="26" heigth="20">
+          <use xlink:href="#icon-mail"></use>
+          </svg>
+          <a href="puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        </div>
+        <div class="contact__container">
+          <svg class="contact__icon contact__icon--phone" aria-label="Позвонить" width="26" heigth="20">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+      </div>
     </section>
   </footer>
   <script src="js/script.js"></script>
