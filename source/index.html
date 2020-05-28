@@ -21,16 +21,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">О нас</a>
+            <a href="#features">О нас</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Виды велосипедов</a>
+            <a href="#type-product">Виды велосипедов</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Видео про велосипеды</a>
+            <a href="#video">Видео про велосипеды</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Контакты</a>
+            <a href="#contact">Контакты</a>
           </li>
         </ul>
       </div>
@@ -62,7 +62,7 @@
         <button  class="form-selection__btn" type="submit" value="Отправить">Подобрать велосипед мечты</button>
       </form>
     </section>
-    <section class="features">
+    <section id="features" class="features">
       <h2>Несколько фактов о нас</h2>
       <ul class="features__list ">
         <li class="features__item">
@@ -83,7 +83,7 @@
         </li>
       </ul>
     </section>
-    <section class="type-product">
+    <section id="type-product" class="type-product">
       <h2>Виды велосипедов</h2>
       <ul class="type-product__list ">
         <li class="type-product__item type-product__item--left">
@@ -109,7 +109,7 @@
         </li>
       </ul>
     </section>
-    <section class="video">
+    <section id="video" class="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
       <div class="video__wrapper">
@@ -118,14 +118,16 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <picture>
-        <source srcset="img/rectangle6@tablet1x.png" media="(max-width: 768px)">  <img src="img/rectangle6@desktop1x.png" width="957" height="530" alt="Карта">
+        <source srcset="img/rectangle6@mobile1x.png" media="(max-width: 320px)">
+        <source srcset="img/rectangle6@tablet1x.png" media="(max-width: 768px)">
+        <img src="img/rectangle6@desktop1x.png" width="957" height="530" alt="Карта">
       </picture>
       <div class="contact__wrapper">
-        <div class="contact__container">
+        <div class="contact__container contact__container--mail">
           <svg class="contact__icon contact__icon--mail" aria-label="Отправить письмо" width="26" heigth="20">
           <use xlink:href="#icon-mail"></use>
           </svg>
