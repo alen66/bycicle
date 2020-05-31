@@ -1,7 +1,7 @@
 .contact {
   width: 100%;
   .mg-auto();
-  padding-top: 247px;
+  padding-top: 154px;
 }
 
 .contact h2 {
@@ -23,22 +23,31 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-.contact img {
+.contact__wrapper-img {
+  width: 66.51%;
+  height: 33.2em;
   .mg-auto();
+  display: flex;
+  background: url("../img/rectangle6@desktop1x.png") no-repeat #ffffff;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact__wrapper {
-  padding: 30px 0 90px;
+  padding: 38px 0 90px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .contact__container {
+  max-width: 320px;
   margin: 0 40px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .contact__container a {
@@ -83,7 +92,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 158px 35px 0;
+    padding: 70px 4.56% 0;
   }
 
   .contact h2 {
@@ -96,6 +105,17 @@
     padding-bottom: 20px;
   }
 
+
+  .contact__wrapper-img {
+    width: 100%; /*957*/
+    height: 34.2em;
+    .reset();/*530*/
+    display: flex;
+    background: url("../img/rectangle6@tablet1x.png") no-repeat #ffffff;
+    background-size: cover;
+    background-position: center;
+  }
+
   .contact__wrapper {
     padding: 14px 0 90px;
     display: flex;
@@ -104,8 +124,8 @@
   }
 
   .contact__container {
-    margin: 0 42px;
-    justify-content: space-between;
+    margin: 0 5.46%;
+    justify-content: center;
   }
 
   .contact__icon--phone {
@@ -117,9 +137,20 @@
   }
 }
 
+@media (max-width: 700px) {
+  .contact__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__container {
+    margin: 0 0;
+  }
+}
+
 @media (max-width: 320px) {
   .contact {
-    padding: 118px 0 0;
+    padding: 72px 0 0;
   }
 
   .contact h2 {
@@ -128,8 +159,16 @@
   }
 
   .contact p {
-    width: 82.2656%; /*555px;*/
+    width: 82.2656%;
     padding-bottom: 20px;
+  }
+
+  .contact__wrapper-img {
+    width: 100%; /*957*/
+    height: 15.5em; /*530*/
+    background: url("../img/rectangle6@desktop1x.png") no-repeat #ffffff;
+    background-size: cover;
+    background-position: center;
   }
 
   .contact__wrapper {

@@ -1,39 +1,36 @@
 .video {
   position: relative;
   width: 100%;
-  height: 23.2333em; /*706*/
-  padding-top: 6.9444%; /*100px; */
+  padding-top: 6.9444%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2.0833vw;
-  background-color: #131314;
+  background: linear-gradient(#131314 87.72%, white 13.88%);
   color: #ffffff;
 }
 
 .video h2 {
   .reset();
-  padding-top: 1.436%; /* 25px;*/
+  max-width: 90%;
+  padding: 1.636% 5% 0;
   .font-base(@fontName;normal;600;30px;30px);
+  align-items: center;
   letter-spacing: -0.005em;
 }
 
 .video p {
-  width: 340px;
-  .font-base(@fontName;normal;300;16px;28px); /*16/28*/
+  width: 27%;
+  padding: 0 10px 2.8888%;
+  .font-base(@fontName;normal;300;16px;28px);
   text-align: center;
   letter-spacing: -0.005em;
   opacity: 0.7;
-  padding-bottom: 3.8888%; /*56px;*/
 }
 
 .video__wrapper {
-  position: absolute;
-  bottom: -98px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 64.51%; /*929*/
-  height: 17.4em; /*522*/
+  width: 64.51%;
+  height: 17.4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,10 +62,10 @@
 
 @media (max-width: 768px) {
   .video {
-    height: 406px;
     padding-top: 50px;
     font-size: 3.9063vw;
-    background-color: #131314;
+    background: linear-gradient(#131314 82.72%, white 13.88%);
+    color: #ffffff;
   }
 
   .video h2 {
@@ -78,17 +75,16 @@
   }
 
   .video p {
-    width: 57.9406%; /*435px;*/
-    padding-bottom: 40px;
+    width: 59.2406%;
+    padding-bottom: 26px;
   }
 
   .video__wrapper {
-    bottom: -90px;
-    width: 65.4948%; /*503px;*/
-    height: 282px;
+    width: 65.4948%;
+    height: 9.4em;
     display: flex;
-    background: url("../img/video-bike@tablet1x.jpg") no-repeat #131314;
-    background-size: cover;
+    background: url("../img/video-bike@desktop1x.jpg") no-repeat #131314;
+    background-size: contain;
     background-position: center;
   }
 
@@ -101,30 +97,30 @@
 @media (max-width: 320px) {
   .video {
     width: 100%;
-    height: 384px;
     padding: 70px 0 0;
+    background: linear-gradient(#131314 88.52%, white 13.88%);
+    color: #ffffff;
   }
 
   .video h2 {
-    width: 102%;
     .reset();
     text-align: center;
     padding-top: 10px;
+    letter-spacing: -0.015em;
   }
 
   .video p {
     width: 100%;
     .reset();
-    padding: 22px 0 40px;
+    padding: 22px 0 50px;
   }
 
   .video__wrapper {
-    bottom: -45px;
     width: 90%;
-    height: 161.66px;
+    height: 13em;
     display: flex;
-    background: url("../img/video-bike@mob1x.jpg") no-repeat #131314;
-    background-size: cover;
+    background: url("../img/video-bike@desktop1x.jpg") no-repeat #131314;
+    background-size: contain;
     background-position: center;
   }
 
