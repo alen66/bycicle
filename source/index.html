@@ -15,9 +15,9 @@
   </div>
   <header class="header">
     <a aria-label="Логотип" class="header__logo">
-      <img src="img/logo.svg"  alt="Логотип">
+      <img src="img/logo.svg" alt="Логотип" width="68" height="20">
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -34,22 +34,20 @@
           </li>
         </ul>
       </div>
-      <svg aria-label="Кнопка закрытия меню" class="main-nav__toggle main-nav__toggle--cross">
+      <svg aria-label="Кнопка закрытия меню" class="main-nav__toggle main-nav__toggle--cross" width="50" height="52">
         <use xlink:href="#icon-cross"></use>
       </svg>
-      <svg aria-label="Кнопка открытия меню" class="main-nav__toggle main-nav__toggle--menu">
+      <svg aria-label="Кнопка открытия меню" class="main-nav__toggle main-nav__toggle--menu" width="50" height="50">
         <use xlink:href="#icon-menu" ></use>
       </svg>
-      <div class="header-backimg">
-      </div>
     </nav>
   </header>
   <main>
     <section class="form-selection">
       <div class="form-selection__wrapper form-selection__wrapper--promo">
-      <a aria-label="Логотип" class="form-selection__logo">
-      <img src="img/logo.svg"  alt="Логотип">
-      </a>
+        <a aria-label="Логотип" class="form-selection__logo">
+          <img src="img/logo.svg"  alt="Логотип" width="68" height="20">
+        </a>
         <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
@@ -89,24 +87,24 @@
         <li class="type-product__item type-product__item--left">
           <picture>
           <!-- 1х: 342px; 2x: 684px -->
-          <source type="image/webp" srcset="img/roadbike@desktop1x.webp 1x, img/roadbike@desktop2x.webp 2x">
-          <img src="img/roadbike@desktop1x.jpg" width="342" height="503" alt="Дорожный велосипед" >
+            <source type="image/webp" srcset="img/roadbike@desktop1x.webp 1x, img/roadbike@desktop2x.webp 2x">
+            <img src="img/roadbike@desktop1x.jpg" width="342" height="503" alt="Дорожный велосипед" >
           </picture>
           <p>Дорожный велосипед</p>
         </li>
-        <li class="type-product__item type-product__item--centr">
+        <li class="type-product__item type-product__item--center">
           <picture>
           <!-- 1х: 342px; 2x: 684px -->
-          <source type="image/webp" srcset="img/mountbike@desktop1x.webp 1x, img/mountbike@desktop2x.webp 2x">
-          <img src="img/mountbike@desktop1x.jpg" width="342" height="503" alt="Горный велосипед">
+            <source type="image/webp" srcset="img/mountbike@desktop1x.webp 1x, img/mountbike@desktop2x.webp 2x">
+            <img src="img/mountbike@desktop1x.jpg" width="342" height="503" alt="Горный велосипед">
           </picture>
           <p>Горный велосипед</p>
         </li>
         <li class="type-product__item type-product__item--right">
           <picture>
           <!-- 1х: 342px; 2x: 684px -->
-          <source type="img/webp" srcset="img/child-bike@desktop1x.webp 1x,img/child-bike@desktop2x.webp 2x" >
-          <img src="img/child-bike@desktop1x.jpg" width="342" height="503" alt="Детский велосипед">
+            <source type="img/webp" srcset="img/child-bike@desktop1x.webp 1x,img/child-bike@desktop2x.webp 2x" >
+            <img src="img/child-bike@desktop1x.jpg" width="342" height="503" alt="Детский велосипед">
           </picture>
           <p>Детский велосипед</p>
         </li>
@@ -116,25 +114,25 @@
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="video__wrapper">
-        <button  class="video__btn" type="button" ></button>
+        <button  class="video__btn" type="button"></button>
       </div>
     </section>
   </main>
   <footer class="footer">
     <section id="contact" class="contact">
-      <h2>Как нас найти?</h2>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <div class="contact__wrapper-img">
+      <div class="contact__wrapper contact__wrapper--adress">
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       </div>
-      <div class="contact__wrapper">
+      <div class="contact__wrapper contact__wrapper--link">
         <div class="contact__container contact__container--mail">
-          <svg class="contact__icon contact__icon--mail" aria-label="Отправить письмо">
-          <use xlink:href="#icon-mail"></use>
+          <svg class="contact__icon contact__icon--mail" aria-label="Отправить письмо" width="26" height="20">
+            <use xlink:href="#icon-mail"></use>
           </svg>
-          <a href="puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         </div>
         <div class="contact__container contact__container--phone">
-          <svg class="contact__icon contact__icon--phone" aria-label="Позвонить">
+          <svg class="contact__icon contact__icon--phone" aria-label="Позвонить" width="22" height="23">
             <use xlink:href="#icon-phone"></use>
           </svg>
           <a href="tel:+749978468446">+7 (499) -784-684-46</a>

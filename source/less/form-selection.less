@@ -83,17 +83,19 @@
   background: #0ad9c6;
   border: none;
   border-radius: 6px;
-  outline: none;
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
     background: #25f5e0;
   }
 
   &:active {
     background: #09ab9b;
+  }
+
+  &:focus {
+    outline: 3px solid #cccccc;
+    outline-style: inset;
   }
 }
 

@@ -4,7 +4,7 @@
   padding-top: 154px;
 }
 
-.contact h2 {
+.contact__wrapper--adress h2 {
   .reset();
   .mg-auto();
   padding-bottom: 30px;
@@ -14,7 +14,7 @@
   color: #1f1f1f;
 }
 
-.contact p {
+.contact__wrapper--adress p {
   width: 555px;
   .mg-auto();
   padding-bottom: 35px;
@@ -23,17 +23,18 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-.contact__wrapper-img {
+.contact__wrapper--adress {
   width: 66.51%;
-  height: 33.2em;
+  height: 43em;
   .mg-auto();
   display: flex;
+  flex-direction: column;
   background: url("../img/rectangle6@desktop1x.png") no-repeat #ffffff;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: bottom;
 }
 
-.contact__wrapper {
+.contact__wrapper--link {
   padding: 38px 0 90px;
   display: flex;
   flex-direction: row;
@@ -106,17 +107,16 @@
   }
 
 
-  .contact__wrapper-img {
-    width: 100%; /*957*/
-    height: 34.2em;
-    .reset();/*530*/
-    display: flex;
+  .contact__wrapper--adress {
+    width: 100%;
+    height: 40.4em;
+    .reset();
     background: url("../img/rectangle6@tablet1x.png") no-repeat #ffffff;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: bottom;
   }
 
-  .contact__wrapper {
+  .contact__wrapper--link {
     padding: 14px 0 90px;
     display: flex;
     flex-direction: row;
@@ -163,15 +163,15 @@
     padding-bottom: 20px;
   }
 
-  .contact__wrapper-img {
-    width: 100%; /*957*/
-    height: 15.5em; /*530*/
-    background: url("../img/rectangle6@desktop1x.png") no-repeat #ffffff;
-    background-size: cover;
-    background-position: center;
+  .contact__wrapper--adress {
+    width: 100%;
+    height: 25.8em;
+    background: url("../img/rectangle6@mobile.png") no-repeat #ffffff;
+    background-size: contain;
+    background-position: bottom;
   }
 
-  .contact__wrapper {
+  .contact__wrapper--link {
     padding: 30px 0 90px;
     flex-direction: column;
     justify-content: center;
@@ -186,10 +186,9 @@
   }
 
   .contact__container {
-    justify-content: center;
-    align-items: center;
     .reset();
-    margin-bottom: 23px;
+
+    margin: 0 0 20px 14px;
   }
 
   .contact__icon--phone {
