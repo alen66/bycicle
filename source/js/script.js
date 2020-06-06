@@ -4,6 +4,8 @@ var navToggle = document.querySelector('.main-nav__toggle--menu');
 var navToggleClose = document.querySelector('.main-nav__toggle--cross');
 
 navMain.classList.remove('main-nav--nojs');
+navMain.classList.add('main-nav--closed');
+navMain.classList.remove('main-nav--opened');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {

@@ -69,11 +69,30 @@
     height: 568px;
   }
 
-  .main-nav--opened .header-backimg {
-    top: 568px;
+  .main-nav--opened::after {
+    content: "";
+    position: absolute;
+    bottom: -340px;
+    left: 0;
+    width: 100%;
+    min-height: 320px;
+    height: 44.1708vw;
+    z-index: -1;
+    background: url("../img/imgbike@tablet1x.png") no-repeat #000000;
+    background-size: cover;
+    background-position: center;
   }
 
   .main-nav--nojs > .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-nav--opened::after {
+    height: 121.875vw;
+    background: url("../img/imgbike@mobile1x.png") no-repeat #000000;
+    background-size: cover;
+    background-position: center;
   }
 }

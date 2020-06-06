@@ -59,7 +59,7 @@
         <label for="name"></label>
         <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
         <label for="phone"></label>
-        <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" title="Используйте формат: +7 (777) 777-77-77" required="" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+        <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" title="Сотовый или местный телефонный номер" required="" pattern="(\+?\d[- .]*){7,13}">
         <button class="form-selection__btn" type="submit" value="Отправить">Подобрать велосипед мечты</button>
       </form>
     </section>
@@ -126,6 +126,8 @@
       <div class="contact__wrapper contact__wrapper--adress">
         <h2>Как нас найти?</h2>
         <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      </div>
+      <div class="contact__map">
       </div>
       <div class="contact__wrapper contact__wrapper--link">
         <div class="contact__container contact__container--mail">
