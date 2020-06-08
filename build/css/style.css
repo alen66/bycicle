@@ -1131,7 +1131,7 @@ body {
   height: 33em;
   margin: 0 auto;
   padding: 0;
-  background: url(../img/rectangle6@desktop1x.png) no-repeat #ffffff;
+  background: url("../img/rectangle6@desktop1x.png") no-repeat #ffffff;
   background-size: cover;
 }
 .contact__wrapper--link {
@@ -1230,7 +1230,7 @@ body {
     height: 34.2em;
     margin: 0 auto;
     padding: 0;
-    background: url(../img/rectangle6@tablet1x.png) no-repeat #ffffff;
+    background: url("../img/rectangle6@tablet1x.png") no-repeat #ffffff;
     background-size: cover;
   }
   .contact__wrapper--link {
@@ -1297,7 +1297,7 @@ body {
     height: 15.6em;
     margin: 0 auto;
     padding: 0;
-    background: url(../img/rectangle6@mobile1x.png) no-repeat #ffffff;
+    background: url("../img/rectangle6@mobile1x.png") no-repeat #ffffff;
     background-size: cover;
   }
   .contact__wrapper--link {
